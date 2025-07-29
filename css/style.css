@@ -1,0 +1,261 @@
+/* 全域 */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Lato", "DM Serif Text", sans-serif;
+}
+
+#banner {
+    width: 100%;
+    height: 500px;
+    padding: 66px 33px;
+    background: url(../images/phone/Banner.png) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 150px;
+}
+
+#banner .container {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.desc {
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn {
+    background-color: #292F36;
+    border-radius: 18px;
+    padding: 26px 48px;
+    color: white;
+    font-size: 1.125rem;
+
+}
+
+.btn i {
+    color: #CDA274;
+    margin-left: 10px;
+    font-size: 1.125rem;
+}
+
+.desc {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* ==============
+   Project Plan
+================== */
+#project {
+    padding: 100px 10px;
+}
+
+#project.contianer {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.porject-plan {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding: 50px;
+}
+
+.h2-1 {
+    margin-bottom: 20px;
+    font-family: "DM Serif Text";
+    font-size: 1.5625rem;
+}
+
+.p-1 {
+    margin-bottom: 25px;
+    line-height: 1.5rem;
+}
+
+.p-2 {
+    font-size: 1rem;
+    margin-bottom: 30px;
+
+}
+
+.p-2 i {
+    color: #CDA274;
+    margin-left: 15px;
+}
+
+/* ==============
+   Article&News
+================== */
+
+#article-news {
+    padding: 100px 30px;
+}
+
+
+
+.title-group {
+    text-align: center;
+}
+
+.section-title {
+    font-size: 3.125rem;
+    font-family: "DM Serif Text";
+    margin-bottom: 20px;
+}
+
+.sub-title {
+    width: 80%;
+    margin: auto;
+    font-size: 1.25rem;
+    margin-bottom: 52px;
+}
+
+.article-item {
+    width: 100%;
+    background-color: white;
+    border-radius: 60px;
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in;
+}
+
+.article-item a {
+    color: black;
+    text-decoration: none;
+}
+
+.pic-frame {
+    width: 100%;
+    border-radius: 45px 45px 0 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.pic {
+    width: 100%;
+}
+
+.tag {
+    position: absolute;
+    border-radius: 15px 15px 15px 0;
+    background-color: #FFFFFF;
+    padding: 10px;
+    left: 10px;
+    bottom: 10px;
+}
+
+.article-title {
+    font-size: 1.5rem;
+}
+
+.link-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.read {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4F0EC;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.read i {
+    font-size: 1.5rem;
+}
+
+
+
+/* 平板 */
+@media screen and (min-width:481px) {
+    #banner {
+        height: 400px;
+        background: url(../images/tablet/Banner.png) no-repeat;
+        background-size: cover;
+        background-position: right bottom;
+        justify-content: flex-start;
+        padding: 66px;
+    }
+
+    #banner .container {
+        width: 65%;
+        background-color: transparent;
+        margin-left: 40px;
+    }
+
+    .article-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .article-item {
+        width: 48%;
+    }
+
+    .porject-plan {
+        width: 31%;
+    }
+
+}
+
+/* 電腦 */
+@media screen and (min-width:1024px) {
+    #banner {
+        height: 850px;
+        background: url(../images/Banner.jpg) no-repeat;
+        background-size: cover;
+        background-position: right bottom;
+        padding: 66px 100px;
+    }
+
+    #banner .container {
+        width: 50%;
+    }
+
+    .hero-title {
+        font-size: 3.75rem;
+    }
+
+    .article-item {
+        width: 31%;
+    }
+
+    .article-item:hover {
+        background-color: #E7E7E7;
+    }
+
+    .read:hover {
+        background-color: #83705e;
+    }
+}

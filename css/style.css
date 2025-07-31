@@ -63,21 +63,20 @@
    Project Plan
 ================== */
 #project {
-    padding: 100px 10px;
+    padding: 100px 30px 50px 30px;
+
 }
 
-#project.contianer {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#project .container {
+    width: 100%;
+    margin: auto;
 }
 
 .porject-plan {
     width: 100%;
     text-align: center;
+    padding: 20px;
     margin: auto;
-    padding: 50px;
 }
 
 .h2-1 {
@@ -103,11 +102,76 @@
 }
 
 /* ==============
+       Call
+================== */
+#call {
+    padding: 50px 30px;
+}
+
+#call.container {
+    width: 100%;
+}
+
+.bg {
+    width: 100%;
+    height: 350px;
+    background: url(../images/about.jpg) no-repeat;
+    background-size: cover;
+    border-radius: 0 100px 0 100px;
+}
+
+.text {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.h2-2 {
+    font-size: 28px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    line-height: 50px;
+}
+
+.p-2 {
+    color: gray;
+    line-height: 30px;
+}
+
+.call-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone {
+    border: none;
+    background-color: #f5ddc4;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.phone i {
+    font-size: 30px;
+    color: #c7945d;
+}
+
+.call-info {
+    margin-left: 20px;
+}
+
+.call-num {
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+/* ==============
    Article&News
 ================== */
 
 #article-news {
-    padding: 100px 30px;
+    padding: 50px 30px;
 }
 
 
@@ -213,18 +277,53 @@
         margin-left: 40px;
     }
 
+    #project .container {
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+    }
+
+    .porject-plan {
+        width: 31%;
+    }
+
+    #call .container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .bg {
+        height: 600px;
+        width: 50%;
+        order: 2;
+    }
+
+    .text {
+        width: 40%;
+        order: 1;
+        text-align: left;
+        padding-top: 60px;
+    }
+
+    .h2-2 {
+        font-size: 48px;
+        line-height: 80px;
+    }
+
+    .call-option {
+        justify-content: left;
+    }
+
     .article-list {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         flex-wrap: wrap;
     }
 
     .article-item {
         width: 48%;
-    }
-
-    .porject-plan {
-        width: 31%;
     }
 
 }
@@ -245,6 +344,11 @@
 
     .hero-title {
         font-size: 3.75rem;
+    }
+
+    .bg {
+        width: 40%;
+        height: 600px;
     }
 
     .article-item {
